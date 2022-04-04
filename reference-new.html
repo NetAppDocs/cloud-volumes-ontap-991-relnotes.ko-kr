@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>Cloud Volumes ONTAP 9.9.1의 새로운 기능 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Cloud Volumes ONTAP 9.9.1의 새로운 기능 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/reference-new.html" />
+	<meta property="og:description" content="Cloud Volumes ONTAP 9.9.1에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP 9.9.1에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.">
+  <meta name="keywords" content=" what"s new, new, features, release notes, enhancements"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/cloud-volumes-ontap-991-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/cloud-volumes-ontap-991-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-991-relnotes/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/product-family.css' type="text/css">
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/na-search.js'></script><script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/na-pagenav.js'></script><link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-991-relnotes/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/na-utility.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/toc.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/version-dropdown.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/jszip.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"><div id="version-dropdown-ie-i18n">
+  <div id="version-dropdown-ie-i18n-menu">
+    <span class="ie-i18n-lang"><span class="version-title">Cloud Volumes ONTAP </span><span class="version">9.9.1</span></span>
+    <span class="version-dropdown-caret"></span>
+  </div>
+  <div id="version-dropdown-n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+    <div class="n-language-selector-menu">
+      <ul class="n-menu__list">
+        <li class="n-menu__list-column">
+          <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.1</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.1</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-9100-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.0</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-990-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.0</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-98-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.8</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-97-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.7</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-96-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.6</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-95-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.5</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-94-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.4</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-93-relnotes/reference-new.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.3</span></span>
+              </a></li></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-991-relnotes/issues/new?body=Page%3A%20[Cloud Volumes ONTAP 9.9.1의 새로운 기능](https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/reference-new.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-991-relnotes/blob/main/reference-new.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">제품 및 솔루션</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">지원 및 교육</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">커뮤니티</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">블로그</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">고객 성공 사례</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ko-kr/cloud-volumes-ontap-991-relnotes/search.html"
+          data-type="widget" 
+          data-placeholder="설명서 검색" 
+          data-no-results-found="{query}에 대한 결과를 찾을 수 없음" 
+          data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
+          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
+          data-results-found="{hitCount}개의 결과를 찾음"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">한국어</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/reference-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-991-relnotes/reference-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-991-relnotes/reference-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-991-relnotes/reference-new.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ko-kr/cloud-volumes-ontap-991-relnotes/pdfs/fullsite-sidebar/Cloud_Volumes_ONTAP_9_9_1_릴리스_정보.pdf" >
+          <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/cloud-volumes-ontap-991-relnotes/pdfs/pages/reference-new.pdf" >
+    <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-991-relnotes/pdfs/sidebar/지원되는_구성.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>
+            지원되는 구성
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-991-relnotes/pdfs/sidebar/보관_제한.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>
+            보관 제한
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-991-relnotes/pdfs/sidebar/알려진_제한_사항.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf.png" width="16" height="16"/>
+            알려진 제한 사항
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ko-kr/cloud-volumes-ontap-991-relnotes/images/pdf-zip.png" width="16" height="16"/>
+      <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
+        모든 Cloud Manager 설명서
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/index.html">
+        릴리스 노트 홈
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-new.html">
+        새로운 소식
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/concept-licensing.html">
+        라이센스 개요
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 지원되는 구성</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-configs-aws.html">
+        설치하고
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-configs-azure.html">
+        Azure를 지원합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-configs-gcp.html">
+        Google 클라우드
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 보관 제한</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limits-aws.html">
+        설치하고
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limits-azure.html">
+        Azure를 지원합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limits-gcp.html">
+        Google 클라우드
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-issues.html">
+        알려진 문제
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 알려진 제한 사항</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limitations.html">
+        일반적인 제한 사항
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limitations-aws.html">
+        AWS의 제한
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limitations-azure.html">
+        Azure의 제한
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limitations-gcp.html">
+        Google Cloud의 제한 사항
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-provider-integrations.html">
+        클라우드 공급자 통합
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-991-relnotes/reference-legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/ko-kr/cloud/">클라우드 문서</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ko-kr/cloud-volumes-ontap-991-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.9.1&nbsp;release&nbsp;notes</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">Cloud Volumes ONTAP 9.9.1의 새로운 기능</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-04 02:44:39 +0000">04/04/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Cloud Volumes ONTAP 9.9.1에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Cloud Manager 릴리즈 노트"</a> 를 참조하십시오.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-p72022년-2월-21일">9.9.1 P7(2022년 2월 21일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Microsoft Azure에서 버전 3.9.15 이상을 실행하는 커넥터가 있는 경우 Cloud Volumes ONTAP에 9.9.1 P7 패치를 사용할 수 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P7" target="_blank" rel="noopener">"P7 패치에서 해결된 버그 목록을 봅니다"</a> (NetApp Support 사이트 로그인 필요).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-패치2022년-2월-3일">9.9.1 패치(2022년 2월 3일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP에 대해 두 가지 새로운 패치가 제공됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>9.9.1 AWS 및 Google Cloud의 P6</p>
+</li>
+<li>
+<p>Microsoft Azure의 9.9.1 P3</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Cloud Manager에서 기존 시스템을 이러한 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P6" target="_blank" rel="noopener">"P6 패치에서 해결된 버그 목록을 봅니다"</a> (NetApp Support 사이트 로그인 필요)</p>
+</li>
+<li>
+<p><a href="https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P3" target="_blank" rel="noopener">"P3 패치에서 해결된 버그 목록을 봅니다"</a> (NetApp Support 사이트 로그인 필요)</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-ga2021년-7월-21일">9.9.1 GA(2021년 7월 21일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.9.1의 GA(General Availability) 릴리스가 출시되었습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>Cloud Manager에서 9.9.1 릴리스 후보, 9.9.0 또는 9.8 버전 중 하나를 실행 중인 기존 시스템을 업그레이드하라는 메시지가 표시됩니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-업데이트2021년-7월-7일">9.9.1 업데이트(2021년 7월 7일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Manager 3.9.8 릴리즈에는 다음과 같은 변경 사항이 도입되었습니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP에 새로운 충전 방법을 사용할 수 있습니다.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>* 용량 기반 BYOL *: 용량 기반 라이센스를 통해 Cloud Volumes ONTAP/TiB 용량 단위로 비용을 지불할 수 있습니다. 라이센스는 NetApp 계정에 연결되어 있으며 라이센스를 통해 사용할 수 있는 용량이 충분한 경우 여러 Cloud Volumes ONTAP 시스템을 생성할 수 있도록 지원합니다. 용량 기반 라이센스는 패키지 형태인 _Essentials_나 _Professional_로 제공됩니다.</p>
+</li>
+<li>
+<p>* Freemium 제공 *: Freemium을 통해 NetApp의 모든 Cloud Volumes ONTAP 기능을 무료로 사용할 수 있습니다(클라우드 공급자 요금은 여전히 적용됨). 시스템당 할당 용량은 500GiB로 제한되며 지원 계약이 없습니다. 최대 10개의 Freemium 시스템을 사용할 수 있습니다.</p>
+<div class="paragraph">
+<p><a href="concept-licensing.html">"이러한 라이센스 옵션에 대해 자세히 알아보십시오"</a>.</p>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>AWS에서 Cloud Volumes ONTAP는 이제 PAYGO Premium, BYOL(용량 기반 라이센스) 및 BYOL(노드 기반 라이센스)과 같은 충전 방식을 사용하여 m5dn.24x대규모 인스턴스 유형을 지원합니다.</p>
+</li>
+<li>
+<p>Google Cloud에서 Cloud Volumes ONTAP는 이제 안정적인 영구 디스크(PD 균형 조정)를 지원합니다. 이러한 SSD는 GiB당 더 낮은 IOPS를 제공하여 성능과 비용의 균형을 유지합니다.</p>
+</li>
+<li>
+<p>사용자 지정-4-16384 시스템 유형은 Google Cloud의 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.</p>
+<div class="paragraph">
+<p>이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html" target="_blank" rel="noopener">"Cloud Manager의 새로운 기능에 대해 자세히 알아보십시오"</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-업데이트2021년-6월-3일">9.9.1 업데이트(2021년 6월 3일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>최근 Cloud Manager 3.9.7 릴리즈에서는 AWS 마켓플레이스의 연간 계약을 통해 Cloud Volumes ONTAP와 Cloud Backup Service를 번들로 제공할 수 있는 새로운 프로페셔널 패키지를 지원합니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="reference-configs-aws.html">"이 라이센스 옵션에 대해 자세히 알아보십시오."</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="9-9-1-릴리스-후보2021년-5월-24일">9.9.1 릴리스 후보(2021년 5월 24일)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 9.9.1 출시 후보 버전은 현재 AWS, Azure 및 Google Cloud Platform에서 사용할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>에 도입된 기능 외에도 <a href="https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508" target="_blank" rel="noopener">"ONTAP 9.9.1"</a>이 Cloud Volumes ONTAP 릴리스에는 다음이 포함됩니다.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#ONTAP S3 support in Azure">[ONTAP S3 support in Azure]</a></p>
+</li>
+<li>
+<p><a href="#Enhanced performance in AWS with high write speed">[Enhanced performance in AWS with high write speed]</a></p>
+</li>
+<li>
+<p><a href="#io2 boot disk in AWS">[io2 boot disk in AWS]</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="azure에서-ontap-s3-지원">Azure에서 ONTAP S3 지원</h3>
+<div class="paragraph">
+<p>이제 Azure의 Cloud Volumes ONTAP에서 S3 오브젝트 스토리지를 제공할 수 있습니다. Microsoft Azure용 Cloud Volumes ONTAP는 NFS, SMB와 같은 기존의 파일 기반 프로토콜 이외에도 S3를 스케일아웃 스토리지 옵션으로 지원합니다.</p>
+</div>
+<div class="paragraph">
+<p>다음 사항에 유의하십시오.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP를 사용하는 ONTAP S3의 주요 사용 사례는 범용 오브젝트 저장소입니다.</p>
+</li>
+<li>
+<p>현재 AWS나 Google Cloud에서는 S3 프로토콜이 Cloud Volumes ONTAP에서 지원되지 않습니다.</p>
+</li>
+<li>
+<p>Cloud Manager는 ONTAP S3 기능에 대한 관리 기능을 제공하지 않습니다.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 <a href="http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html" target="_blank" rel="noopener">"S3 구성 전원 가이드"</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="빠른-쓰기-속도로-aws의-성능-향상">빠른 쓰기 속도로 AWS의 성능 향상</h3>
+<div class="paragraph">
+<p>당사는 Cloud Volumes ONTAP의 처리 성능을 향상했습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html" target="_blank" rel="noopener">"빠른 쓰기 속도"</a> 지원되는 인스턴스 유형에서 이(가) 활성화됩니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="aws의-io2-부팅-디스크">AWS의 io2 부팅 디스크</h3>
+<div class="paragraph">
+<p>AWS에서 새 Cloud Volumes ONTAP 시스템의 부팅 디스크가 이제 프로비저닝 IOPS SSD(iio2) 볼륨이 되었습니다. iio2 볼륨은 이전에 부팅 디스크에 사용했던 ii1 볼륨에 비해 더 높은 안정성을 제공합니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="cloud-manager-connector의-필수-버전입니다">Cloud Manager Connector의 필수 버전입니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>새로운 Cloud Volumes ONTAP 9.9.1 시스템을 구축하고 기존 시스템을 9.9.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.6 이상을 실행해야 합니다.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="노트-업그레이드">노트 업그레이드</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</p>
+</li>
+<li>
+<p>9.9.0 릴리스 및 9.8 릴리스에서 Cloud Volumes ONTAP 9.9.1로 업그레이드할 수 있습니다. Cloud Manager에서 기존 Cloud Volumes ONTAP 9.9.0 및 9.8 시스템을 9.9.1 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</p>
+<div class="paragraph">
+<p><a href="http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html" target="_blank" rel="noopener">"Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"</a>.</p>
+</div>
+</li>
+<li>
+<p>단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</p>
+</li>
+<li>
+<p>HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="c4-m4-및-r4-인스턴스-유형">C4, M4 및 R4 인스턴스 유형</h3>
+<div class="paragraph">
+<p>9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p>C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ds3_v2">DS3_v2</h3>
+<div class="paragraph">
+<p>9.9.1 릴리즈부터 DS3_v2 VM 유형은 더 이상 신규 및 기존 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 이 VM 유형에서 실행 중인 기존 시스템이 있는 경우 9.9.1로 업그레이드하기 전에 VM 유형을 변경해야 합니다.</p>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-991-relnotes/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
+  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/www-ntap.js'></script>
+    <script src='/ko-kr/cloud-volumes-ontap-991-relnotes/js/tabbed-blocks.js'></script>
+  </body></html>
