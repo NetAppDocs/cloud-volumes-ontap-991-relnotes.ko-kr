@@ -1,0 +1,156 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.9.1에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. 
+---
+= Cloud Volumes ONTAP 9.9.1의 새로운 기능
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.9.1에는 몇 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
+
+최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
+
+
+
+== 9.9.1 P7(2022년 2월 21일)
+
+Microsoft Azure에서 버전 3.9.15 이상을 실행하는 커넥터가 있는 경우 Cloud Volumes ONTAP에 9.9.1 P7 패치를 사용할 수 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P7["P7 패치에서 해결된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
+
+
+
+== 9.9.1 패치(2022년 2월 3일)
+
+Cloud Volumes ONTAP에 대해 두 가지 새로운 패치가 제공됩니다.
+
+* 9.9.1 AWS 및 Google Cloud의 P6
+* Microsoft Azure의 9.9.1 P3
+
+
+Cloud Manager에서 기존 시스템을 이러한 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+
+* https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P6["P6 패치에서 해결된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요)
+* https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.9.1P3["P3 패치에서 해결된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요)
+
+
+
+
+== 9.9.1 GA(2021년 7월 21일)
+
+Cloud Volumes ONTAP 9.9.1의 GA(General Availability) 릴리스가 출시되었습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.
+
+Cloud Manager에서 9.9.1 릴리스 후보, 9.9.0 또는 9.8 버전 중 하나를 실행 중인 기존 시스템을 업그레이드하라는 메시지가 표시됩니다.
+
+
+
+== 9.9.1 업데이트(2021년 7월 7일)
+
+Cloud Manager 3.9.8 릴리즈에는 다음과 같은 변경 사항이 도입되었습니다.
+
+* Cloud Volumes ONTAP에 새로운 충전 방법을 사용할 수 있습니다.
++
+** * 용량 기반 BYOL *: 용량 기반 라이센스를 통해 Cloud Volumes ONTAP/TiB 용량 단위로 비용을 지불할 수 있습니다. 라이센스는 NetApp 계정에 연결되어 있으며 라이센스를 통해 사용할 수 있는 용량이 충분한 경우 여러 Cloud Volumes ONTAP 시스템을 생성할 수 있도록 지원합니다. 용량 기반 라이센스는 패키지 형태인 _Essentials_나 _Professional_로 제공됩니다.
+** * Freemium 제공 *: Freemium을 통해 NetApp의 모든 Cloud Volumes ONTAP 기능을 무료로 사용할 수 있습니다(클라우드 공급자 요금은 여전히 적용됨). 시스템당 할당 용량은 500GiB로 제한되며 지원 계약이 없습니다. 최대 10개의 Freemium 시스템을 사용할 수 있습니다.
++
+link:concept-licensing.html["이러한 라이센스 옵션에 대해 자세히 알아보십시오"].
+
+
+
+* AWS에서 Cloud Volumes ONTAP는 이제 PAYGO Premium, BYOL(용량 기반 라이센스) 및 BYOL(노드 기반 라이센스)과 같은 충전 방식을 사용하여 m5dn.24x대규모 인스턴스 유형을 지원합니다.
+* Google Cloud에서 Cloud Volumes ONTAP는 이제 안정적인 영구 디스크(PD 균형 조정)를 지원합니다. 이러한 SSD는 GiB당 더 낮은 IOPS를 제공하여 성능과 비용의 균형을 유지합니다.
+* 사용자 지정-4-16384 시스템 유형은 Google Cloud의 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.
++
+이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.
+
+
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager의 새로운 기능에 대해 자세히 알아보십시오"^].
+
+
+
+== 9.9.1 업데이트(2021년 6월 3일)
+
+최근 Cloud Manager 3.9.7 릴리즈에서는 AWS 마켓플레이스의 연간 계약을 통해 Cloud Volumes ONTAP와 Cloud Backup Service를 번들로 제공할 수 있는 새로운 프로페셔널 패키지를 지원합니다.
+
+link:reference-configs-aws.html["이 라이센스 옵션에 대해 자세히 알아보십시오."]
+
+
+
+== 9.9.1 릴리스 후보(2021년 5월 24일)
+
+Cloud Volumes ONTAP 9.9.1 출시 후보 버전은 현재 AWS, Azure 및 Google Cloud Platform에서 사용할 수 있습니다.
+
+에 도입된 기능 외에도 https://library.netapp.com/ecm/ecm_download_file/ECMLP2492508["ONTAP 9.9.1"^]이 Cloud Volumes ONTAP 릴리스에는 다음이 포함됩니다.
+
+* <<ONTAP S3 support in Azure>>
+* <<Enhanced performance in AWS with high write speed>>
+* <<io2 boot disk in AWS>>
+
+
+
+
+=== Azure에서 ONTAP S3 지원
+
+이제 Azure의 Cloud Volumes ONTAP에서 S3 오브젝트 스토리지를 제공할 수 있습니다. Microsoft Azure용 Cloud Volumes ONTAP는 NFS, SMB와 같은 기존의 파일 기반 프로토콜 이외에도 S3를 스케일아웃 스토리지 옵션으로 지원합니다.
+
+다음 사항에 유의하십시오.
+
+* Cloud Volumes ONTAP를 사용하는 ONTAP S3의 주요 사용 사례는 범용 오브젝트 저장소입니다.
+* 현재 AWS나 Google Cloud에서는 S3 프로토콜이 Cloud Volumes ONTAP에서 지원되지 않습니다.
+* Cloud Manager는 ONTAP S3 기능에 대한 관리 기능을 제공하지 않습니다.
+
+
+CLI를 사용하는 것이 Cloud Volumes ONTAP에서 S3 클라이언트 액세스를 구성하는 모범 사례입니다. 자세한 내용은 를 참조하십시오 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.pow-s3-cg/home.html["S3 구성 전원 가이드"^].
+
+
+
+=== 빠른 쓰기 속도로 AWS의 성능 향상
+
+당사는 Cloud Volumes ONTAP의 처리 성능을 향상했습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["빠른 쓰기 속도"^] 지원되는 인스턴스 유형에서 이(가) 활성화됩니다.
+
+
+
+=== AWS의 io2 부팅 디스크
+
+AWS에서 새 Cloud Volumes ONTAP 시스템의 부팅 디스크가 이제 프로비저닝 IOPS SSD(iio2) 볼륨이 되었습니다. iio2 볼륨은 이전에 부팅 디스크에 사용했던 ii1 볼륨에 비해 더 높은 안정성을 제공합니다.
+
+
+
+== Cloud Manager Connector의 필수 버전입니다
+
+새로운 Cloud Volumes ONTAP 9.9.1 시스템을 구축하고 기존 시스템을 9.9.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.6 이상을 실행해야 합니다.
+
+
+
+== 노트 업그레이드
+
+* Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
+* 9.9.0 릴리스 및 9.8 릴리스에서 Cloud Volumes ONTAP 9.9.1로 업그레이드할 수 있습니다. Cloud Manager에서 기존 Cloud Volumes ONTAP 9.9.0 및 9.8 시스템을 9.9.1 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
++
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"^].
+
+* 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
+* HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
+
+
+
+
+=== C4, M4 및 R4 인스턴스 유형
+
+9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.
+
+C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.
+
+
+
+=== DS3_v2
+
+9.9.1 릴리즈부터 DS3_v2 VM 유형은 더 이상 신규 및 기존 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 이 VM 유형에서 실행 중인 기존 시스템이 있는 경우 9.9.1로 업그레이드하기 전에 VM 유형을 변경해야 합니다.
