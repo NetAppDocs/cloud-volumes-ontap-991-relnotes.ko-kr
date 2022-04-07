@@ -80,7 +80,7 @@ sidebar:
   - title: 클라우드 공급자 통합
     url: "/reference-provider-integrations.html"
   - title: 법적 고지
-    url: "/reference-legal-notices.html"
+    url: "/legal-notices.html"
 homepage:
   tiles:
   - title: 시작하십시오
