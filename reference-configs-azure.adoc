@@ -6,6 +6,7 @@ summary: Azure에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.
 ---
 = Azure에서 지원되는 구성
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -48,6 +49,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32s_v3^2^
 * E48s_v3^2^
 * E64is_v3^2^
+* E80ids_v4^2^
 * L8s_v2^3^
 
  a| 
@@ -65,6 +67,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32s_v3^2^
 * E48s_v3^2^
 * E64is_v3^2^
+* E80ids_v4^2^
 
  a| 
 * DS4_v2
@@ -77,6 +80,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32s_v3^2^
 * E48s_v3^2^
 * E64is_v3^2^
+* E80ids_v4^2^
 * L8s_v2^3^
 
  a| 
@@ -90,6 +94,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32s_v3^2^
 * E48s_v3^2^
 * E64is_v3^2^
+* E80ids_v4^2^
 * L8s_v2^3^
 
 

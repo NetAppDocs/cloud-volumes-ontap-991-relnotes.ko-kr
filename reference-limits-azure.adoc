@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 Azure에서 스토리지 구성 제한으로 안
 ---
 = Azure의 스토리지 제한
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -91,6 +92,9 @@ NOTE: Cloud Volumes ONTAP BYOL 시스템에 대해 여러 노드 기반 라이�
 
 
 | E64is_v3 | 29 | 368TiB | 368TiB 
+
+
+| E80ids_v4 | 61 | 368TiB | 368TiB 
 |===
 
 
@@ -138,6 +142,9 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 
 
 | L8s_v2 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
+
+
+| E80ids_v4 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
 |===
 
 
@@ -179,6 +186,9 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 
 
 | L8s_v2 | 13 | 416TiB | 2 PiB 
+
+
+| E80ids_v4 | 61 | 1.95PiB | 2 PiB 
 |===
 
 
@@ -204,7 +214,7 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E48s_v3 | 29 | 232TiB | 368TiB 
 
 
-| E80ids_v4 | 29 | 232TiB | 368TiB 
+| E80ids_v4 | 61 | 368TiB | 368TiB 
 |===
 
 
@@ -239,7 +249,7 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
 
 
-| E80ids_v4 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| E80ids_v4 | 61 | 368TiB | 368TiB | 488TiB | 368TiB x 각 라이센스 
 |===
 
 
@@ -271,7 +281,7 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E48s_v3 | 29 | 232TiB | 2 PiB 
 
 
-| E80ids_v4 | 29 | 232TiB | 2 PiB 
+| E80ids_v4 | 61 | 488TiB | 2 PiB 
 |===
 
 
