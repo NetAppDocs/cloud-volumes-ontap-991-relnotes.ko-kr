@@ -766,4 +766,5 @@
   <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">NetApp이 사용자 계정을 승인한 후<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
+  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
 </blocks>
