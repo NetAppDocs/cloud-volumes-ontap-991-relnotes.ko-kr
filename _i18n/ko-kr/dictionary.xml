@@ -650,7 +650,6 @@
   <block id="24996c045717f17c4e40ebb44791b2af" category="list-text">라이센스 또는 계약이 필요하지 않습니다.</block>
   <block id="cc3b16b51bb72e66b8f103fef83035d9" category="list-text">NetApp의 지원은 포함되지 않습니다.</block>
   <block id="895dacd81cbc05951744c0bce981546c" category="list-text">Cloud Volumes ONTAP 시스템당 프로비저닝된 용량 500GiB로 제한됩니다.</block>
-  <block id="46cb473c7acee70e9be90113f3acce9d" category="list-text">모든 클라우드 공급자가 NetApp 계정 하나당 Freemium 제품을 사용하면 최대 10대의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.</block>
   <block id="922e54a2e69b279fbb6ab93d4f189181" category="list-text">Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 용량이 500GiB를 초과하면 Cloud Manager가 시스템을 Essentials 패키지(용량 기반 라이센스)로 변환합니다.</block>
   <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">프로비저닝된 용량이 500GiB 미만인 다른 모든 시스템은 Freemium에 그대로 유지됩니다(Freemium 제품을 사용하여 구축한 경우).</block>
   <block id="9911a1f4ee7b400064d4cd20d4db15cb" category="paragraph">Freemium 제품을 시작하려면 새로운 Cloud Volumes ONTAP 작업 환경을 만들고 충전 방법을 선택하라는 메시지가 나타나면 * Freemium * 을 선택합니다.</block>
@@ -674,7 +673,6 @@
   <block id="3cc132ecf0523f86195d2baf263bfdba" category="paragraph">Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.</block>
   <block id="f0c74524bf1dcc2586975c7d2fab30aa" category="list-text">NetApp에서 BYOL(라이센스)을 구매하여 모든 클라우드 공급자가 Cloud Volumes ONTAP를 구축할 수 있습니다.</block>
   <block id="c603e0cd8afdb5636238d7d652481a08" category="paragraph">라이센스는 단일 클라우드 공급자에 제한되지 않습니다.</block>
-  <block id="0a042d8bd5f070de6995ada78bbc5818" category="list-text">클라우드 공급자 마켓플레이스(AWS 및 Google Cloud만 해당)로부터 연간 계약을 체결합니다.</block>
   <block id="f28f2c679b3208af9d5fe292ad6356b8" category="list-text">클라우드 공급자 시장에서 시간별 구독(PAYGO)</block>
   <block id="743cd9f94465042cc1367604dce1ec22" category="list-text">NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.</block>
   <block id="0956d25698d6ea6e452e1cd574ab1eea" category="paragraph">라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.</block>
@@ -767,4 +765,11 @@
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
+  <block id="78bd6ae14d58c0754e9678cbf2ebad05" category="list-text">NetApp 계정당 프리미엄 제공 기능을 통해 최대 10개의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.</block>
+  <block id="612b1fa388e719e990cb953520986784" category="list-text">클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.</block>
+  <block id="7012cf86c42fb3eec6343900832f1d08" category="list-text">AWS에서는 AWS 마켓플레이스의 퍼블릭 오퍼에서 연간 계약을 이용할 수 있습니다. Cloud Volumes ONTAP 작업 환경을 구축할 때 Cloud Manager에서 구독을 신청하라는 메시지를 표시합니다.</block>
+  <block id="1ce7e5f92b8c11b96a7b6fea0435803d" category="list-text">Azure에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.</block>
+  <block id="d3ef010be2a71bc188b8cf2beb05ac32" category="list-text">Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="f96723ecb29e40ca9b9fb042ab6ff4ef" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.</block>
 </blocks>
