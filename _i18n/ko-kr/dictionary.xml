@@ -763,4 +763,8 @@
   <block id="fed5c8246ca485a22abc959eb3025a8c" category="admonition">무료 평가판이 시작될 때, 7일 남았습니다. 1일이 남았을 때, Cloud Manager에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.<block ref="4c1747a7ecb096dffecedae45404dae8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">용량 기반 라이센스를 시작하는 방법에 대해 알아보십시오.</block>
   <block id="fdb736034a6801c8a5010a511211a4a7" category="paragraph">Keystone 유연한 구독 시작 방법 알아보기:</block>
+  <block id="e0b13ea645feb48ac220b0833d3df83a" category="section-title">9.9.1 P8(2022년 5월 15일)</block>
+  <block id="4c0101d6e580cc73498085272f84779c" category="paragraph">Microsoft Azure에서 버전 3.9.13 이상을 실행하는 커넥터가 있는 경우 Cloud Volumes ONTAP에 9.9.1 P8 패치를 사용할 수 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="a5757ef07045a814bda504c5b48177c6" category="inline-link">P8 패치에서 해결된 버그 목록을 봅니다</block>
+  <block id="25d11917417ee6320483ef20f056b14c" category="paragraph"><block ref="99e171e9eff5188da0e63d2b7cd3c805" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
 </blocks>
