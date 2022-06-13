@@ -766,6 +766,6 @@
   <block id="e1e947c069bd154f04aefec0a6619873" category="paragraph">시스템을 PAYGO by-node 라이센싱에서 BYOL by-node 라이센싱으로 변환하는 기능은 지원되지 않습니다. 새 시스템을 구축한 다음 데이터를 해당 시스템으로 복제해야 합니다.<block ref="c9d55d60961394f2cbacfb1050626915" category="inline-link-rx"></block></block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xLarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xLarge</block>
-  <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 50개로 제한됩니다.</block>
-  <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 8개의 Cloud Volumes ONTAP HA 쌍과 4개의 단일 노드 시스템이 있다면 총 12개의 시스템이 있고 고객 시스템에 38개의 추가 시스템이 있을 것입니다.</block>
+  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다.</block>
+  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.</block>
 </blocks>
