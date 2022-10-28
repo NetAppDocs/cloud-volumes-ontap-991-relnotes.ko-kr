@@ -50,7 +50,6 @@
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2 인스턴스별로 디스크 및 계층화가 제한됩니다</block>
   <block id="5a9c94e941761c15ef227dfa8c3fc6d8" category="paragraph">Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 크기는 16TiB입니다. 아래 섹션에는 EC2 인스턴스 유형 중 많은 수의 디스크 제한이 서로 다르기 때문에 EC2 인스턴스 제품군별 디스크 및 계층화 제한이 나와 있습니다. 또한 디스크 제한은 단일 노드 시스템과 HA 쌍 간에 다릅니다.</block>
   <block id="cf3a2d2c139bf5c9cc87fe714bfff3b1" category="paragraph">다음 사항에 유의하십시오.</block>
-  <block id="fcbbbbf63a3670e6d833837ba2594683" category="list-text">C4, M4 및 R4 인스턴스 유형은 새로운 Cloud Volumes ONTAP 9.9.1 시스템에서 지원되지 않습니다. 그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 9.9.1 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</block>
   <block id="5eb6e090da55ad28bf2f9c1286619ef2" category="list-text">아래의 디스크 제한은 사용자 데이터를 포함하는 디스크에만 적용됩니다. 이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
   <block id="275e3ef1a302e67e93bcf0f30d566f74" category="inline-link">Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오</block>
   <block id="bb1dfd389b14b44028041022a8d2899f" category="list-text">이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>.<block ref="cd9ff634efd9a4fe20f170cd618702b5" category="inline-link-rx"></block>.</block>
@@ -65,8 +64,6 @@
   <block id="fa8f49d51a641a3bff30030d048d2d98" category="cell">m5dn.24xlarge</block>
   <block id="c7867e37fc822edce03899d5be8cd610" category="cell">19^2^</block>
   <block id="4668344801574e5e337879aa8f85df78" category="cell">304TiB</block>
-  <block id="fc826e6778c6295676325980e26183d6" category="cell">C4, M4 및 R4 인스턴스</block>
-  <block id="e369853df766fa44e1ed0ff613f563bd" category="cell">34</block>
   <block id="64d21a165becbe18d275a66aac4f8e8e" category="list-text">21개의 데이터 디스크는 Cloud Volumes ONTAP의 _new_deDeployments에 대한 제한입니다. 9.7 이하 버전으로 생성된 시스템을 업그레이드하면 시스템에서 22개의 디스크를 계속 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</block>
   <block id="3d60f9d4f3945975bb1eca051c0bbef9" category="list-text">이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</block>
   <block id="84dbd7aba83fa6e04c6f7c96a1be85f2" category="section-title">노드 기반 라이센스가 있는 단일 노드</block>
@@ -76,7 +73,6 @@
   <block id="bb49543449782c0f1b87b3ef8f49a6be" category="cell">* 디스크만 사용 *</block>
   <block id="e3185eb0708df4883935910ebf26f8db" category="cell">* 디스크 + 데이터 계층화 *</block>
   <block id="f94f9afeacfc431720c782db2e1d8809" category="cell">368TiB x 각 라이센스</block>
-  <block id="6ebe799c380816a48bf991ae59543433" category="cell">544TiB</block>
   <block id="918660df9dabb216873a828f8dba357f" category="section-title">용량 기반 라이센스가 있는 단일 노드</block>
   <block id="3c59dc048e8850243be8079a5c74d079" category="cell">21</block>
   <block id="a23ca456fec74dd76d95b20f2cf60dd0" category="cell">19^1^</block>
@@ -85,10 +81,8 @@
   <block id="b7608c5d160ea75c5c58e10097dc4db7" category="cell">TiB 288</block>
   <block id="dee0912fefbe003d7ae380d371a87fad" category="cell">16^2^</block>
   <block id="9f71cb3204a7c80e435b6337aed1e728" category="cell">256TiB</block>
-  <block id="c16a5320fa475530d9583c34fd356ef5" category="cell">31</block>
   <block id="01d00547146974c6eeb34ecc38263cb0" category="list-text">Cloud Volumes ONTAP의 _new_de구축에는 18개의 데이터 디스크가 제한됩니다. 9.7 이전 버전으로 생성된 시스템을 업그레이드하면 시스템에서 계속 19개의 디스크를 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</block>
   <block id="5d0440e2b7983c0540ac561d3bd66201" category="section-title">HA는 노드 기반 라이센스와 페어링합니다</block>
-  <block id="35a779533962b549212e6b883b5793f7" category="cell">4,96TiB</block>
   <block id="74c7b6190ee0e7fb8e5bb03dd438c3da" category="section-title">HA는 용량 기반 라이센스와 페어링합니다</block>
   <block id="6f4922f45568161a8cdf4ad2299f6d23" category="cell">18</block>
   <block id="d165ee52657df0e131ad67ed84783dfb" category="cell">16^1^</block>
@@ -113,12 +107,9 @@
   <block id="10a824a307a3ec9647d72cf1842c2254" category="inline-link">추가 스토리지 VM을 생성하는 방법을 알아보십시오</block>
   <block id="94603c2f4a34dbb9c9a2fa72acf1b544" category="paragraph"><block ref="b409a35c1f5637c3fa6cd7bc9b79706b" category="inline-link-rx"></block>.</block>
   <block id="82060d81b7ce43c57280e879899f9a2c" category="cell">사용권 유형</block>
-  <block id="4037b2b5756ae2a7b370c7b6e783aa25" category="cell">인스턴스 패밀리</block>
   <block id="2b32b0b2d0f29c87c701d113a9b7814c" category="cell">스토리지 VM 제한</block>
-  <block id="39361436d2ec06b159fff2a0853d8f11" category="cell">C4, M4 및 R4</block>
   <block id="b44aff299926ff48d9c9937caf2bcc7c" category="list-text">1 데이터 제공용 스토리지 VM</block>
   <block id="0d8a30d82cccb71952d16b4403bf498c" category="list-text">재해 복구용 스토리지 VM 1개</block>
-  <block id="db2a5609d325e7b486ff21c338843d70" category="cell">C5, M5 및 R5</block>
   <block id="c420a49390d2a1dcf064814a1b9bce50" category="cell">* Freemium *</block>
   <block id="bff1ed10eaa2848422c2177b3404da96" category="list-text">스토리지 VM 총 24개 ^1,2^</block>
   <block id="91910075fafd14e95deb889d8997ae86" category="cell">* 노드 기반 BYOL * ^4^</block>
@@ -561,9 +552,6 @@
   <block id="803d45df8eb29c3872409cc750868adb" category="paragraph"><block ref="91157be1d04ccb789488c1869d33e63c" category="inline-link-rx"></block>.</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
   <block id="00795e3f043d0bab791590ffc0257204" category="list-text">HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
-  <block id="0810d353d59682cc576139c85dde16ca" category="section-title">C4, M4 및 R4 인스턴스 유형</block>
-  <block id="a1e5d1768da3a3100837f2ea13ebd32f" category="paragraph">9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.</block>
-  <block id="f84be4481dc8e8613c8c66fe2b277872" category="paragraph">C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.</block>
   <block id="2be187f608e3ad4af24d83ba1557f439" category="section-title">DS3_v2</block>
   <block id="5df049400fcb004a7798d336c199abfc" category="paragraph">9.9.1 릴리즈부터 DS3_v2 VM 유형은 더 이상 신규 및 기존 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 이 VM 유형에서 실행 중인 기존 시스템이 있는 경우 9.9.1로 업그레이드하기 전에 VM 유형을 변경해야 합니다.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
@@ -677,4 +665,11 @@
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 시스템을 구축할 때 비즈니스 요구 사항에 따라 여러 라이센스 패키지 중에서 선택할 수 있습니다.</block>
   <block id="f3b3e9858be5dbfaf6c39891db3263a2" category="paragraph"><block ref="f3b3e9858be5dbfaf6c39891db3263a2" category="inline-link-rx"></block></block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
+  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">C4, M4 및 R4 인스턴스가 더 이상 지원되지 않음(2022년 10월 28일)</block>
+  <block id="45468834981b77e3d08a5c6457436141" category="paragraph">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다.</block>
+  <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
+  <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>.</block>
+  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
+  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
 </blocks>
