@@ -203,7 +203,6 @@
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Google Private Service Connect 제한 사항</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
   <block id="7af98a0e0cd62cd4ddc103341d51fda2" category="inline-link">Cloud Manager API 엔드포인트</block>
-  <block id="948671a13623cbbc9f65ca511ed257a3" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="acf94572d3bfe8bd5bc5166d196eeacc" category="inline-link-rx"></block>.</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Cloud Volumes ONTAP의 데이터를 Google 클라우드 스토리지 버킷으로 계층화하는 것은 현재 프라이빗 서비스 Connect에서 지원되지 않습니다.</block>
   <block id="7bb35241d1246d5dc87cb9e61c1efc05" category="summary">이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다.</block>
   <block id="2d9da48a9b4a4fd6966adc9c52393b79" category="doc">Azure의 알려진 제한 사항</block>
@@ -214,9 +213,6 @@
   <block id="2d62580dcf116f839bad7027ac992878" category="list-text">NFSv4는 지원되지 않습니다. NFSv3이 지원됩니다.</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="list-text">일부 지역에서는 HA 쌍이 지원되지 않습니다.</block>
   <block id="1538d38eb23a96781db500ec7bd30195" category="inline-link">지원되는 Azure 지역 목록을 참조하십시오</block>
-  <block id="f5b8e6c4c4b082cf610f078e361a727f" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block>.</block>
-  <block id="e4f5b6f59db7bfa0e08c02262ddbd654" category="section-title">CSP 파트너는 선불 종량제(Pay-as-you-go)을 사용할 수 없습니다</block>
-  <block id="f2ff5834d93c258f0fc4ad6cf6a17942" category="paragraph">Microsoft 클라우드 솔루션 공급자(CSP) 파트너인 경우 CSP 파트너는 선불 종량제 구독을 사용할 수 없으므로 Cloud Volumes ONTAP Explore, Standard 또는 Premium을 배포할 수 없습니다. 라이센스를 구입하고 Cloud Volumes ONTAP BYOL을 구축해야 합니다.</block>
   <block id="5520e32d61a58dff51fc6730939c3baf" category="summary">Cloud Volumes ONTAP은 안정적인 운영을 제공하기 위해 Google Cloud에서 스토리지 구성 제한을 가지고 있습니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</block>
   <block id="c73908091fadeb9dec16abab42821644" category="doc">Google Cloud의 스토리지 제한</block>
   <block id="b5110a96ee31f0d84f4df3d51e44588e" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 용량 제한에 도달할 수 있습니다<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. 자세한 내용은 아래의 디스크 제한을 참조하십시오.</block>
@@ -459,7 +455,6 @@
   <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">다른 모든 위치, 버전, 구성 및 라이센스는 지원되지 않습니다.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.</block>
-  <block id="207289e471510410b8d11da3001f65d7" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.</block>
   <block id="1d7a5501cfb31aff808abb63ef9085c2" category="section-title">Cloud Manager에서 소프트웨어 업데이트를 완료해야 합니다</block>
   <block id="93e3c3d0ea43d600b3c3cd4548ea3987" category="paragraph">Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</block>
@@ -672,4 +667,11 @@
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
+  <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
+  <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
+  <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
+  <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
+  <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>.</block>
+  <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
+  <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
 </blocks>
