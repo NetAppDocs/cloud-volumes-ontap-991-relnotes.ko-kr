@@ -22,7 +22,7 @@ Cloud Volumes ONTAP는 안정적인 운영을 제공하기 위해 스토리지 �
 
 Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다.
 
-NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 Cloud Manager에서 작업 필요 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.
+NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.
 
 [cols="25,75"]
 |===
@@ -385,7 +385,7 @@ DR(재해 복구)에 대해 구성하는 스토리지 VM에는 추가 라이센�
 |===
 참고:
 
-. Cloud Manager는 SVM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.
+. BlueXP는 SVM 재해 복구를 위한 설정 또는 조정 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.
 +
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
 ** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
