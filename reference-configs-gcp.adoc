@@ -71,7 +71,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 |===
 참고:
 
-. 디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
+. 디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
 +
 link:reference-limits-gcp.html["Google Cloud의 디스크 제한에 대해 자세히 알아보십시오"].
 
