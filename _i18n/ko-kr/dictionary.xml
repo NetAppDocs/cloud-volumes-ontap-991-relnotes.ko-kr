@@ -601,8 +601,6 @@
   <block id="30af1a6878bac3a7aaed5d0e64e7b511" category="paragraph">Cloud Volumes ONTAP은 다양한 라이센스 옵션을 제공하므로 요구사항에 맞는 소비 모델을 선택할 수 있습니다.</block>
   <block id="37439fa615a442ec183c1c602f9755f1" category="paragraph">용량 기반 라이센스는 _package_ 형식으로 제공됩니다. Cloud Volumes ONTAP 시스템을 구축할 때 비즈니스 요구 사항에 따라 여러 라이센스 패키지 중에서 선택할 수 있습니다.</block>
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
-  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">C4, M4 및 R4 인스턴스가 더 이상 지원되지 않음(2022년 10월 28일)</block>
-  <block id="45468834981b77e3d08a5c6457436141" category="paragraph">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다.</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
   <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
   <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
@@ -651,7 +649,6 @@
   <block id="a990fdc46668be8e7f963c8df127bbe8" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>.</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 를 참조하십시오.</block>
-  <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
   <block id="fe6a5baec235ed2ef8294950400bee9a" category="paragraph"><block ref="6e22851c75a2250209bafc3b226dc27a" category="inline-link-rx"></block>.</block>
   <block id="73d1413bc306d2c4b0c75804a185cb92" category="paragraph">당사는 Cloud Volumes ONTAP의 처리 성능을 향상했습니다<block ref="2e39d8fdf30e9e16d9b726348766aa33" category="inline-link-rx"></block> 지원되는 인스턴스 유형에서 이(가) 활성화됩니다.</block>
   <block id="4b323e04ca5d7cc4cd4fa2663891f134" category="paragraph"><block ref="1098c1d48c661da787dab89e43caa652" category="inline-link-rx"></block>.</block>
@@ -674,4 +671,8 @@
 단일 데이터 서비스 SVM은 전체 Cloud Volumes ONTAP 시스템(HA 쌍 또는 단일 노드)을 포괄합니다.</block>
   <block id="2dbd9a217bce4c7ba4ef467f57d6875c" category="list-text">Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 노드 기반 라이센스를 여러 개 구매하여 최대 테스트 및 지원 시스템 용량 제한인 2개의 PiB까지 368TiB의 용량을 할당할 수 있습니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>.<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block>. Cloud Volumes ONTAP는 최대 테스트 및 지원되는 시스템 용량인 2 PiB를 지원하지만 2 PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.</block>
   <block id="de9d6749570efc87e63811b5947fc250" category="list-text">AWS Secret Cloud 및 Top Secret Cloud 지역에서는 Cloud Volumes ONTAP 9.12.1부터 다수의 노드 기반 라이센스 구매를 지원합니다.</block>
+  <block id="fbf9b099d9ec8deac1671938fd60e8f8" category="list-text">AWS에서는 새로운 Cloud Volumes ONTAP 구축에서 C4, M4 및 R4 EC2 인스턴스 유형이 더 이상 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다. 인스턴스 유형을 변경할 수 없는 경우 업그레이드하기 전에 향상된 네트워킹을 활성화해야 합니다.</block>
+  <block id="e6567e962bca159fe4fe2d30a50079b1" category="inline-link-macro">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형으로 업그레이드하는 방법에 대해 알아봅니다.</block>
+  <block id="25b6ed6b9d928059099051d0094805bd" category="paragraph"><block ref="14ef78ffd73c19fb64f58a6e03889f5c" category="inline-link-macro-rx"></block>
+<block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
 </blocks>
