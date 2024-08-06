@@ -277,7 +277,6 @@
   <block id="a1834fbcd2847d469ef79f5526dcee65" category="inline-link">EC2 인스턴스 유형에 대한 최신 세부 정보는 AWS를 참조하십시오</block>
   <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">각 Cloud Volumes ONTAP 라이센스는 서로 다른 EC2 인스턴스 유형을 지원합니다. 아래 표에는 지원되는 각 인스턴스 유형에 대한 vCPU, RAM 및 대역폭이 나와 있습니다.<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block>.</block>
   <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">NetApp 기술 보고서 4383: 애플리케이션 워크로드를 포함한 Amazon Web Services의 Cloud Volumes ONTAP 성능 특성</block>
-  <block id="5070622feb6e4e88eeee7983bad01de6" category="paragraph">아래 표에 표시된 대역폭 은 각 인스턴스 유형에 대해 문서화된 AWS 제한과 일치합니다. 이러한 제한은 Cloud Volumes ONTAP이 제공할 수 있는 것과 완전히 일치하지는 않습니다. 예상 성능은 을 참조하십시오<block ref="21181a62240b2a52719451cc8d855312" category="inline-link-rx"></block>.</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">지원되는 인스턴스</block>
   <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">vCPU</block>
   <block id="e53619c1fe611a51eeeb8d148ba6e532" category="cell">RAM</block>
@@ -588,10 +587,8 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="e0b13ea645feb48ac220b0833d3df83a" category="section-title">9.9.1 P8(2022년 5월 15일)</block>
   <block id="a5757ef07045a814bda504c5b48177c6" category="inline-link">P8 패치에서 해결된 버그 목록을 봅니다</block>
   <block id="25d11917417ee6320483ef20f056b14c" category="paragraph"><block ref="99e171e9eff5188da0e63d2b7cd3c805" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
@@ -655,7 +652,6 @@
   <block id="64440bb71539a777dc59cfbda8a3e5ee" category="list-text">이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -675,4 +671,5 @@
   <block id="e1ec06a3bd4a559443a88f1cb6736c26" category="inline-link-macro">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형으로 업그레이드하는 방법을 알아보십시오</block>
   <block id="f295c0f45a8e22a4e4db9141680cce76" category="paragraph"><block ref="0fa12a627192b6cd097b12cd8088afe0" category="inline-link-macro-rx"></block>.
 <block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
+  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">아래 표에 표시된 대역폭 은 각 인스턴스 유형에 대해 문서화된 AWS 제한과 일치합니다. 이러한 제한은 Cloud Volumes ONTAP이 제공할 수 있는 것과 완전히 일치하지는 않습니다. 예상 성능은 을<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>참조하십시오.</block>
 </blocks>
