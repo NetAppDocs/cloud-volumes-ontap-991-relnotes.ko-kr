@@ -342,7 +342,6 @@
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">Cloud Volumes ONTAP는 예약된 EC2 인스턴스 또는 주문형 EC2 인스턴스에서 실행할 수 있습니다. 다른 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">지원 지역</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Cloud Volumes 글로벌 지역</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="paragraph">AWS 지역 지원은 를 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="56ca786dd848302142c428b36f1c8b30" category="summary">이 페이지에서는 NetApp이 클라우드 공급자와 협력하여 이슈 발생 시 이를 해결하는 방법에 대해 설명합니다.</block>
   <block id="b67ce24b0ef9db5e8910cc39a69b1ef6" category="doc">클라우드 공급자 통합</block>
   <block id="3ecb2b72be9054cc88589bb0cf193ca9" category="section-title">협력 지원 모범 사례</block>
@@ -396,7 +395,6 @@
   <block id="0a1f6a0fa33e6a786e0c1f71a0ea33a9" category="list-text">이 VM 유형은 을 사용합니다<block ref="d656d82278337f3ecf8db6b2a30a45f2" category="inline-link-rx"></block> VNVRAM의 경우, 더 나은 쓰기 성능을 제공합니다.</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link">자세한 정보</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">Azure 지역 지원은 를 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.</block>
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 쌍</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 중에서 선택할 수 있습니다.</block>
@@ -513,7 +511,6 @@
   <block id="a93742b808592a2ce1b1926f98f391eb" category="paragraph"><block ref="46bbc0e4d7a811f26e46cbb2c2ad7173" category="inline-link-macro-rx"></block>.</block>
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore에서는 Google Cloud Storage에 대한 데이터 계층화가 지원되지 않습니다.</block>
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">Google Cloud Platform 지역 지원은 를 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">Google Cloud에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 지원되는 디스크 크기는 다음과 같습니다.</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100GB</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1TB</block>
@@ -603,7 +600,6 @@
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
-  <block id="1f129df010c594cb0d37bd30745a3820" category="paragraph"><block ref="1f129df010c594cb0d37bd30745a3820" category="inline-link-rx"></block></block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP 인터페이스는 Standard 및 BYOL:n1-highmem-4에 대해 지원되는 추가 시스템 유형을 보여 줍니다. 그러나 이 기계 유형은 생산 환경에 사용할 수 없습니다. 특정 연구소 환경에서만 사용할 수 있도록 만들었습니다.</block>
   <block id="406542fd6b2bb7b1e564e4a6d627bddb" category="paragraph">NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</block>
   <block id="59f715c959b1702bb88d03230a637982" category="paragraph">아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TiB 디스크를 구입한 경우 BlueXP에서는 미러링된 데이터에 사용되는 노드 B에 8TiB 디스크도 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</block>
@@ -676,4 +672,8 @@
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Azure VM 확장 사용 시 제한 사항</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Cloud Volumes ONTAP는 배포 시 Azure VM(가상 머신) 확장 및 VM 애플리케이션을 지원하지 않습니다. VM 확장과 함께 Azure에서 Cloud Volumes ONTAP를 사용하면 작업이 지연되므로 NetApp에서는 이를 방지할 것을 권장합니다.</block>
   <block id="6c30a21d6f6cc42b1e2acaab3267705c" category="sidebar">Cloud Volumes ONTAP 9.9.1 릴리스 정보</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">AWS 지역 지원에 대해서는 을 참조하십시오<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">Azure 지역 지원에 대해서는 을<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="ef9be83cb59b0572a3581a6724316e48" category="list-text">Google Cloud Platform 지역 지원은 을 참조하십시오<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="26f113c6240bf0450440356676516cf1" category="paragraph"><block ref="26f113c6240bf0450440356676516cf1" category="inline-link-rx"></block></block>
 </blocks>
