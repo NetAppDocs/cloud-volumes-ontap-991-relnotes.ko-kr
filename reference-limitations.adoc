@@ -20,12 +20,14 @@ AWS, Azure, Google Cloud와 같은 모든 클라우드 공급자의 Cloud Volume
 
 
 
+[[maximum-concurrent-replication-operations]]
 == 최대 동시 복제 작업 수
 
 인스턴스 유형 또는 시스템 유형에 상관없이 Cloud Volumes ONTAP에 대한 최대 동시 SnapMirror 또는 SnapVault 전송 수는 노드당 100개입니다.
 
 
 
+[[cloud-provider-snapshots-must-not-be-used-for-your-backup-and-recovery-plans]]
 == 클라우드 공급자 스냅샷은 백업 및 복구 계획에 사용할 수 없습니다
 
 Cloud Volumes ONTAP 데이터에 대한 백업 및 복구 계획에 클라우드 공급자의 스냅샷을 사용하면 안 됩니다. 항상 ONTAP 스냅샷 복사본 또는 타사 백업 솔루션을 사용하여 Cloud Volumes ONTAP에 호스팅된 데이터를 백업 및 복원해야 합니다.
@@ -37,42 +39,49 @@ NOTE: WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정
 
 
 
+[[cloud-volumes-ontap-supports-reserved-and-on-demand-vm-instances]]
 == Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다
 
 Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.
 
 
 
+[[automatic-application-resource-management-solutions-shouldnt-be-used]]
 == 자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다
 
 자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.
 
 
 
+[[software-updates-must-be-completed-by-bluexp]]
 == 소프트웨어 업데이트는 BlueXP에서 완료해야 합니다
 
 Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
 
 
 
+[[cloud-volumes-ontap-deployment-must-not-be-modified-from-your-cloud-providers-console]]
 == Cloud Volumes ONTAP 배포는 클라우드 공급자의 콘솔에서 수정할 수 없습니다
 
 클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. BlueXP에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경 사항은 시스템 안정성과 BlueXP의 시스템 관리 능력에 영향을 줄 수 있습니다.
 
 
 
+[[disks-and-aggregates-must-be-managed-from-bluexp]]
 == 디스크와 애그리게이트는 BlueXP에서 관리해야 합니다
 
 모든 디스크와 애그리게이트는 BlueXP에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
 
 
 
+[[snapmanager-licensing-limitation]]
 == SnapManager 라이센스 제한
 
 SnapManager 서버당 라이센스는 Cloud Volumes ONTAP에서 지원됩니다. 스토리지당 시스템(SnapManager 제품군) 라이센스는 지원되지 않습니다.
 
 
 
+[[unsupported-ontap-features]]
 == 지원되지 않는 ONTAP 기능입니다
 
 다음 기능은 Cloud Volumes ONTAP에서 지원되지 않습니다.
